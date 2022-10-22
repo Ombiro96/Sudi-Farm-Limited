@@ -1,51 +1,78 @@
-:root{
-    --bright:rgba(11, 95, 36, 1.0);
-}
-*{
-    padding: 0;
-    margin: 0;
+* {
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
-    text-decoration: none;
-    list-style: none;
-    text-align: center;
 }
-.header{
-    background-color: var(--bright);
-    height: 20vh;
+
+html, body {
+    background: white;
+    margin: 0;
+    height: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img,
+div,
+header,
+main,
+nav,
+article,
+footer {
+    /* background:#326c37; */
+    color: black;
+    border: 2px solid #377EFF;
+}
+
+a {
+    color: white;
+}
+
+a:active, :focus {
+    outline: 2px solid white;
+    background: purple;
+}
+
+.centered {
+    width: 70%;
+    margin: 0 auto;
+}
+
+body {
     display: grid;
-    grid-auto-flow: column;
-    /* justify-content: flex-end; */
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content auto min-content;
+    gap: 10px;
 }
-#logo{
-    /* background-color: red; */
-    color: goldenrod;
-    font-weight: bold;
-    font-size: 2em;
-    padding: 5px;/*absolute measurement*/
-    /* float: right; */
+
+header, footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
-.menu-container{
-    /* background-color: blueviolet; */
-    color: goldenrod;
-}
-.list-items{
+
+main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* justify-content: flex-end; */
+    grid-template-columns: 1fr;
+    
+    /* gap: 10px; */
 }
-.list-items > *{
-    margin: 1em;
-    padding: 1em;
-    font-size: 1.2em;
+
+#content-section, #intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* grid-column-start: 1; */
 }
-.item:hover{
-    background-color: aquamarine;
+
+main,article,div,p, img{
+    padding: 0.5em;
+    /* background-color: ; */
 }
-.footer{
-    background-color: var(--bright);
-    height: 10vh;
-    position: relative;
-    top: 70vh;
+
+footer,header {
+    background-color:#06B25F;
 }
+
+img {
+    background-color: #662D9F;
+}
+/* div,p {
+    
+} */
