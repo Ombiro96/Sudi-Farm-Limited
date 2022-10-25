@@ -1,14 +1,22 @@
+:root{
+    --mainColor: hsla(120,100%,20%,1.0);
+    --complemantaryColor: hsla(200,100%,50%,1.0);
+    --lighter:hsla(0,100%,100%,1.0);
+    --darker:hsla(0,0%,0%,1.0);
+    --royal:hsla(300,100%,30%,1.0);
+}
+
+
 * {
     box-sizing: border-box;
-}
-
-html, body {
-    background: white;
+    padding: 0;
     margin: 0;
-    height: 100%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    /* height: 100%; */
 }
-
+ul, 
+li,
 img,
 div,
 header,
@@ -17,22 +25,60 @@ nav,
 article,
 footer {
     /* background:#326c37; */
-    color: black;
-    border: 2px solid #377EFF;
+    color: var(--darker);
+    border: 2px solid var(--complemantaryColor);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    color: var(--lighter);
+    list-style-type: none;/*removes bullets*/
+    background-color: var(--mainColor);
+    width: 100%;
+    /* overflow: hidden; */
+}
+ul{
+    display: flex;
+    /* flex-direction: row; row is the default so no need to specify */
+    list-style-type: none;
+}
+li a{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    text-decoration: none;
+    width: fit-content;
+    height: 2em;
+    padding: 1em;
+    margin: 1em;
+    /* border: 2px solid green;
+    background-color: fuchsia; */
 }
 
-a {
-    color: white;
+li a:hover{
+    background-color: var(--royal);
+    transition: 0.4s;
 }
+
+/* a {
+    color: var(--lighter);
+} */
 
 a:active, :focus {
-    outline: 2px solid white;
-    background: purple;
+    outline: 2px solid var(--lighter);
+    background: var(--royal);
 }
 
 .centered {
     width: 70%;
     margin: 0 auto;
+}
+.logo{
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: var(--royal);
 }
 
 body {
@@ -67,12 +113,32 @@ main,article,div,p, img{
 }
 
 footer,header {
-    background-color:#06B25F;
+    background-color: var(--mainColor);
 }
 
 img {
-    background-color: #662D9F;
+    background-color: var(--royal);
 }
-/* div,p {
-    
-} */
+footer{
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    bottom: 0;
+}
+.footer-div{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    background-color: var(--mainColor);
+    width:100%;
+    text-align:center;
+    padding: 3em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: 600;
+}
+.copyrights{
+    text-align: center;
+    font-size: 1.25em;
+    background-color: var(--mainColor);
+}
