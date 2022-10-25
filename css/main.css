@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: hsla(151, 93%, 36%, 0.1);
+    /* background-color: hsla(151, 93%, 36%); */
     }
 
 html, body {
@@ -21,7 +21,7 @@ article,
 footer {
     /* background:#326c37; */
     color: black;
-    border: 2px solid #377EFF;
+    /* border: 2px solid #377EFF; */
 }
 /* link styles */
 /* #45d451 */
@@ -87,11 +87,11 @@ article {
 
 main,article,div,p, img{
     padding: 0.5em;
-    /* background-color: #8f4fcf; */
+    /* background-color: #8f4fcf; 06B25F*/
 }
 
 footer,header {
-    background-color:#06B25F;
+    background-color:#329966;
 }
 
 img {
