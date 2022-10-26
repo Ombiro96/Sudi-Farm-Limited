@@ -10,7 +10,11 @@ html, body {
     margin: 0;
     height: 100%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: linear-gradient(177deg, #50bb85 52%, #71C4FFFF 100%); */
 }
+
 
 img,
 div,
@@ -23,19 +27,57 @@ footer {
     color: black;
     /* border: 2px solid #377EFF; */
 }
-/* link styles */
-/* #45d451 */
-a {
-    color: white;
-    background-color: #377EFF;
-    padding: 0.7em 1.5em;
-    text-decoration: none;
-    margin: 10px;
-    width: 150px;
-    border-radius: 10px;
-    text-align: center;
+
+/* Navigation bar  */
+#main-nav{
+     position :sticky;
+        top:0;
 
 }
+
+nav ul {
+    display:grid;
+    grid-template-columns: 1fr repeat(3,200px);
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;   
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* text-align: center; */
+    padding: 0.5rem;
+    /* border-radius: 5px; */
+    /* background: #377EFF; */
+    color: white;
+
+}
+
+/* ------------------------------------------- */
+
+/* footer content */
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 1rem; */
+    /* padding: 1rem; */
+    /* background: #377EFF; */
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+
+.copyright{
+    grid-column: 1/4;
+    text-align: center;
+    color: white;
+
+}
+
+/* link styles */
+/* #45d451 */
+
 
 a:visited{
 
@@ -59,7 +101,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content auto min-content;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 header, footer {
@@ -110,10 +152,23 @@ h2 {
 }
 h1 {
     color: #06B25F;
+    font-size: 2.5rem;
 }
 
 #contact-us h2{
 color: #377EFF;
+}
+
+.btn {
+    color: white;
+    background-color: #377EFF;
+    padding: 0.7em 1.5em;
+    text-decoration: none;
+    margin: 10px;
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+
 }
 
 /* responsive mobile design */
@@ -124,5 +179,17 @@ color: #377EFF;
     
         /* grid-column-start: 1; */
     }
+
+    /* footer content */
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-gap: 1rem; */
+    /* padding: 1rem; */
+    /* background: #377EFF; */
+    color: white;
+    text-align: center;
+}
     
     }
