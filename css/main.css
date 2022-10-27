@@ -1,15 +1,17 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     /* background-color: hsla(151, 93%, 36%, 0.1); */
-    }
+}
 
-html, body {
+html,
+body {
     /* background: white; */
     margin: 0;
-    height: 100%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* background-size: 100% 100%;
     background-position: 0px 0px;
     background-image: linear-gradient(177deg, #50bb85 52%, #71C4FFFF 100%); */
@@ -29,24 +31,24 @@ footer {
 }
 
 /* Navigation bar  */
-#main-nav{
-     position :sticky;
-        top:0;
+#main-nav {
+    position: sticky;
+    top: 0;
 
 }
 
 nav ul {
-    display:grid;
-    grid-template-columns: 1fr repeat(3,200px);
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 200px);
     list-style: none;
 }
 
 nav ul a {
-    text-decoration: none;   
+    text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
     /* text-align: center; */
-    padding: 0.5rem;
+    padding: 0.2em;
     /* border-radius: 5px; */
     /* background: #377EFF; */
     color: white;
@@ -54,6 +56,30 @@ nav ul a {
 }
 
 /* ------------------------------------------- */
+/* hero content */
+
+#hero{
+    display: grid;
+    background-image: url("../images/tractor-cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+#hero-content{
+    color: white;
+    font-weight: 600;
+    font-size: 1.3em;
+    padding: 1em 1em;
+    width: 320px;
+}
+
+
 
 /* footer content */
 
@@ -68,7 +94,7 @@ nav ul a {
     align-items: center;
 }
 
-.copyright{
+.copyright {
     grid-column: 1/4;
     text-align: center;
     color: white;
@@ -79,17 +105,11 @@ nav ul a {
 /* #45d451 */
 
 
-a:visited{
+a:visited {}
 
-}
+a:hover {}
 
-a:hover{
-
-}
-
-a:hover{
-
-}
+a:hover {}
 
 
 .centered {
@@ -104,7 +124,8 @@ body {
     /* gap: 10px; */
 }
 
-header, footer {
+header,
+footer {
     grid-column-start: 1;
     grid-column-end: 4;
 }
@@ -112,28 +133,98 @@ header, footer {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    
+
     /* gap: 10px; */
 }
-article {
+
+#main-content article {
     display: grid;
-    
+    padding: 1em;
+
 }
 
-#content-section, #intro{
-    
+#content-section,
+#intro {
+
     grid-template-columns: 1fr 1fr;
 
     /* grid-column-start: 1; */
 }
 
-main,article,div,p, img{
-    padding: 0.5em;
-    /* background-color: #8f4fcf; 06B25F*/
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1em;
+
 }
 
-footer,header {
-    background-color:#329966;
+.product-card {
+
+    display: grid;
+    grid-template-rows: max-content 230px 1fr;
+    justify-items: center;
+    align-items: center;
+    
+
+}
+.product-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1em;
+
+}
+
+.testimonial-card {
+
+    display: grid;
+    grid-template-rows: 210px 1fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.testimonial-card img {
+    object-fit: cover;
+    width: 75%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+
+/* ------------------------------------------- */
+.recognized-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 5px;
+
+}
+
+.recognized-card {
+
+    display: grid;
+    grid-template-rows: 200px;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.recognized-card img {
+    object-fit: cover;
+    width: 75%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+footer,
+header {
+    background-color: #329966;
 }
 
 img {
@@ -149,14 +240,16 @@ img {
 
 h2 {
     color: #662D9F;
+    text-align: center;
 }
+
 h1 {
     color: #06B25F;
     font-size: 2.5rem;
 }
 
-#contact-us h2{
-color: #377EFF;
+#contact-us h2 {
+    color: #377EFF;
 }
 
 .btn {
@@ -172,24 +265,26 @@ color: #377EFF;
 }
 
 /* responsive mobile design */
-@media screen and (max-width: 768px){
-    #content-section,#intro{
-    
+@media screen and (max-width: 768px) {
+
+    #content-section,
+    #intro {
+
         grid-template-columns: auto;
-    
+
         /* grid-column-start: 1; */
     }
 
     /* footer content */
 
-.footer-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* grid-gap: 1rem; */
-    /* padding: 1rem; */
-    /* background: #377EFF; */
-    color: white;
-    text-align: center;
-}
-    
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-gap: 1rem; */
+        /* padding: 1rem; */
+        /* background: #377EFF; */
+        color: white;
+        text-align: center;
     }
+
+}
