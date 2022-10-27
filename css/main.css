@@ -25,8 +25,8 @@ nav,
 article,
 footer {
     /* background:#326c37; */
-    color: var(--darker);
-    border: 2px solid var(--complemantaryColor);
+    /* color: var(--darker); */
+    /* border: 2px solid var(--complemantaryColor); */
 }
 header{
     display: flex;
@@ -35,13 +35,14 @@ header{
     color: var(--lighter);
     list-style-type: none;/*removes bullets*/
     background-color: var(--mainColor);
-    width: 100%;
+    min-width: fit-content;
     /* overflow: hidden; */
 }
 ul{
     display: flex;
     /* flex-direction: row; row is the default so no need to specify */
     list-style-type: none;
+    /* flex-direction: column; */
 }
 li a{
     display: flex;
@@ -68,6 +69,14 @@ li a:hover{
 a:active, :focus {
     outline: 2px solid var(--lighter);
     background: var(--royal);
+}
+#check{
+    display: none;
+}
+.checkbox{
+    color: var(--lighter);
+    line-height: 4em;
+    font-size: 2em;
 }
 
 .centered {
@@ -141,4 +150,20 @@ footer{
     text-align: center;
     font-size: 1.25em;
     background-color: var(--mainColor);
+}
+@media screen and (max-width: 850px) {
+    ul{
+        display: flex;
+        /* flex-direction: row; row is the default so no need to specify */
+        flex-direction: column;
+        list-style-type: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    ul{
+        display: flex;
+        /* flex-direction: row; row is the default so no need to specify */
+        flex-direction: column;
+        list-style-type: none;
+    }
 }
