@@ -29,7 +29,7 @@ article,
 footer {
     /* background:#326c37; */
     /* color: var(--darker); */
-    border: 2px solid var(--complemantaryColor);
+    /* border: 2px solid var(--complemantaryColor); */
 }
 header{
     display: flex;
