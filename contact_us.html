@@ -10,19 +10,17 @@
 </head>
 <body>
     <header>
+        <nav class="header">
         <div class="logo"><a href="home.html">Logo</a></div>
-        <!-- <input type="checkbox" id="check"> -->
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <ul>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <ul class="menu">
             <li><a href="home.html" target="_self"><span class="link">Home</span></a></li>
             <li><a href="contact_us.html" target="_self"><span class="link">Contact</span></a></li>
             <li><a href="about_us.html" target="_self"><span class="link">About</span></a></li>
             <li><a href="services.html" target="_self"><span class="link">Services</span></a></li>
         </ul>
+    </nav>
     </header>
     <main id="centered">
         <div class="main-container">
@@ -40,22 +38,25 @@
         </div>
     </main>
     <footer>
-        <div class="footer-div">
-            <div>Address
-                <p>Roysambu</p>
-            <p>Thome</p>
-            <!-- <p>Adress: 2846</p> -->
-        </div>
-            <div>Contact us
-                <p>Phone no: +254713592852</p>
-                <p>Email: sudifarm@gmail.com</p>
-            </div>
-            <div class="office">Office hours
+        <div class="footer-content">
+            <address>
+                <h3>Address</h3>
+                <p>Location: Roysambu, Thome</p>
+                <p>P.O BOX 2846</p>
+            </address>
+            <address>
+                <p>Contact us</p>
+                <p>Phone no: +25470424242</p>
+                <p>Email: contact@sudifarm.com</p>
+            </address>
+            <address>
+                <p>Office hours</p>
                 <p>7.00am-5.00pm</p>
                 <p>Monday through Sunday</p>
-            </div>
-            </div>
-            <div class="copyrights">copyrights: @Sudi Farm Limited</div>
+            </address>
+        </div>
+        <p class="copyrights">copyright: @Sudi Farm Limited</p>
+
     </footer>
 </body>
 </html>
