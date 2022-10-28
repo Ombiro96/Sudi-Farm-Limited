@@ -1,0 +1,46 @@
+.main-container{
+    display: flex;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--mainColorFaded);
+    align-items: center;
+    width: 50%;
+}
+button{
+    align-items: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    height: 3rem;
+    width: 7rem;
+    background-color: var(--complemantaryColor);
+    border-radius: 10px;
+}
+button:hover{
+    height: 5rem;
+    width: 8rem;
+    box-shadow: 2px;
+}
+.image-container{
+    width: 50%;
+    height: 50vh;
+    align-content: flex-end;
+}
+#email{
+    display: inline;
+    width: 100%;
+}
+#name{
+    display: inline;
+    width: 100%;
+}
+#message{
+    display: inline;
+    width: 100%;
+}
+#phone{
+    display: inline;
+    width: 100%;
+}

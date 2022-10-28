@@ -1,5 +1,6 @@
 :root{
     --mainColor: hsla(120,100%,20%,1.0);
+    --mainColorFaded: hsla(120,100%,20%,0.6);
     --complemantaryColor: hsla(200,100%,50%,1.0);
     --lighter:hsla(0,100%,100%,1.0);
     --darker:hsla(0,0%,0%,1.0);
@@ -9,11 +10,13 @@
 
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1em;
     /* height: 100%; */
+}
+html, body{
+    padding: 0;
+    margin: 0;
 }
 ul, 
 li,
@@ -25,60 +28,87 @@ nav,
 article,
 footer {
     /* background:#326c37; */
-    color: var(--darker);
+    /* color: var(--darker); */
     border: 2px solid var(--complemantaryColor);
 }
 header{
     display: flex;
+    /* flex-direction: column; */
     justify-content: space-between;
     font-size: 2em;
     color: var(--lighter);
     list-style-type: none;/*removes bullets*/
     background-color: var(--mainColor);
-    width: 100%;
+    /* min-width: 100%; */
+    min-width: fit-content;
+    min-height: 10vh;
+    /* overflow: scroll; */
     /* overflow: hidden; */
 }
 ul{
     display: flex;
     /* flex-direction: row; row is the default so no need to specify */
     list-style-type: none;
+    height: fit-content;
+    margin: 0;
+    padding: 0%;
+    /* flex-direction: column; */
 }
 li a{
     display: flex;
     /* flex-direction: column; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     text-decoration: none;
     width: fit-content;
+    height: fit-content;
     height: 2em;
-    padding: 1em;
-    margin: 1em;
+    padding: 0 1rem;
+    margin-top: 1rem;
     /* border: 2px solid green;
     background-color: fuchsia; */
 }
 
-li a:hover{
-    background-color: var(--royal);
+.link:hover{
+    color: aqua;
     transition: 0.4s;
 }
-
-/* a {
-    color: var(--lighter);
-} */
-
 a:active, :focus {
     outline: 2px solid var(--lighter);
     background: var(--royal);
 }
-
+.toggle-button{
+    position: absolute;
+    top: 0.8rem;
+    right: 1em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1em;
+    width: 1.5em;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: var(--lighter);
+    border-radius: 0.5em;
+}
+#check{
+    display: none;
+}
 .centered {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
 }
 .logo{
-    align-items: center;
+    /* display: none; */
+    /* background-color: aqua; */
+    /* margin-top: 1rem; */
+    align-content: center;
     justify-content: center;
-    font-size: 2em;
+    text-decoration: none;
+    font-size: 1em;
     color: var(--royal);
+    height: fit-content;
 }
 
 body {
@@ -94,6 +124,8 @@ header, footer {
 }
 
 main {
+    position: relative;
+    /* top: 10vh; */
     display: grid;
     grid-template-columns: 1fr;
     
@@ -107,10 +139,12 @@ main {
     /* grid-column-start: 1; */
 }
 
+
 main,article,div,p, img{
     padding: 0.5em;
     /* background-color: ; */
 }
+/*contact form*/
 
 footer,header {
     background-color: var(--mainColor);
@@ -123,22 +157,98 @@ footer{
     display: flex;
     flex-direction: column;
     /* position: absolute; */
-    bottom: 0;
+    /* bottom: 0; */
+    width: 100%;
+    margin-top: 1rem;
 }
 .footer-div{
     display: flex;
     /* flex-direction: row; */
     justify-content: space-between;
     background-color: var(--mainColor);
-    width:100%;
+    /* max-width:100%; */
     text-align:center;
-    padding: 3em;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    padding: 5px;
+    margin: 0px;
     font-weight: 600;
 }
 .copyrights{
     text-align: center;
     font-size: 1.25em;
     background-color: var(--mainColor);
+}
+@media screen and (max-width: 850px) {
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 5px;
+        z-index: 1;
+    }
+    ul{
+        display: flex;
+        /* flex-direction: row; row is the default so no need to specify */
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    li{
+        /* display: none; */
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    li a{
+        padding: 0.5rem, 0em;
+        margin: 0;
+        /* color: yellow; */
+    }
+    .toggle-button{
+        display: flex;
+    }
+    main{
+        position: relative;
+        top: 10vh;
+    }
+}
+@media screen and (max-width: 400px) {
+    ul{
+        display: flex;
+        /* flex-direction: row; row is the default so no need to specify */
+        flex-direction: column;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    li{
+        display: none;
+        z-index: -1;
+    }
+    li a{
+        padding: 0.5rem, 0em;
+        margin: 0;
+        /* color: yellow; */
+    }
+    .footer-div{
+        flex-direction: column;
+        margin-bottom: 2px;
+        display: none;
+        /*do i remove this?*/
+    }
+    .toggle-button{
+        position: absolute;
+        top: 1rem;
+        right: 0.0001rem;
+    }
+    li a{
+        padding: 0;
+        margin: 0;
+    }
+    .toggle-button .bar{
+        height: 5px;
+        width: 10%;
+        background-color: var(--lighter);
+        border-radius: 0.5em;
+    }
 }
