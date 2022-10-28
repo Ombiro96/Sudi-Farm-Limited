@@ -88,11 +88,11 @@ nav ul a {
     font-weight: 600;
     font-size: 1.3em;
     padding: 1em 1em;
-    width: 320px;
+    width: 35%;
     background: rgb(0,0,0,0.2)
 }
 
-
+/* --------------------------------------------------------------- */
 
 /* footer content */
 
@@ -113,6 +113,8 @@ nav ul a {
     color: white;
 
 }
+
+/* --------------------------------------------------------------- */
 
 /* link styles */
 /* #45d451 */
@@ -170,15 +172,21 @@ main {
     /* grid-column-start: 1; */
 }
 
+.intro-images {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+
+}
+
 /* intro content */
 #intro img {
     object-fit: cover;
     height:300px;
     border-radius: 5%;
     max-width: 80%;
-    
-    
 }
+
 
 #content-section img {
     object-fit: cover;
@@ -241,7 +249,7 @@ main {
 /* ------------------------------------------- */
 .recognized-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 5px;
 
 }
@@ -256,9 +264,9 @@ main {
 }
 
 .recognized-card img {
-    object-fit: cover;
-    width: 75%;
-    height: 100%;
+    object-fit: fill;
+    width: 70%;
+    height: 80%;
     border-radius: 50%;
     
 }
@@ -341,6 +349,7 @@ h1 {
 
 }
 
+
 /* responsive mobile design */
 @media screen and (max-width: 768px) {
 
@@ -362,6 +371,9 @@ h1 {
         /* background: #377EFF; */
         color: white;
         text-align: center;
+    }
+    #hero-content{
+        width:300px;
     }
 
 }
