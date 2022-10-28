@@ -14,9 +14,19 @@
     font-size: 1em;
     /* height: 100%; */
 }
-html, body{
-    padding: 0;
+body {
+    /* background-color: hsla(151, 93%, 36%, 0.1); */
+}
+
+html,
+body{
+    /* padding: 0; */
     margin: 0;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: linear-gradient(177deg, #50bb85 52%, #71C4FFFF 100%); */
 }
 ul, 
 li,
@@ -95,6 +105,18 @@ a:active, :focus {
 #check{
     display: none;
 }
+
+/* link styles */
+/* #45d451 */
+
+
+a:visited {}
+
+a:hover {}
+
+a:hover {}
+
+
 .centered {
     width: 100%;
     margin: 0 auto;
@@ -114,11 +136,12 @@ a:active, :focus {
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: min-content auto min-content;
-    gap: 10px;
+    grid-template-rows: min-content 1fr min-content;
+    /* gap: 10px; */
 }
 
-header, footer {
+header,
+footer {
     grid-column-start: 1;
     grid-column-end: 4;
 }
@@ -128,26 +151,100 @@ main {
     /* top: 10vh; */
     display: grid;
     grid-template-columns: 1fr;
-    
+
     /* gap: 10px; */
 }
 
-#content-section, #intro{
+#main-content article {
     display: grid;
+    padding: 1em;
+
+}
+
+#content-section,
+#intro {
+
     grid-template-columns: 1fr 1fr;
 
     /* grid-column-start: 1; */
 }
 
 
-main,article,div,p, img{
-    padding: 0.5em;
-    /* background-color: ; */
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1em;
+
+}
+
+.product-card {
+
+    display: grid;
+    grid-template-rows: max-content 230px 1fr;
+    justify-items: center;
+    align-items: center;
+    
+
+}
+.product-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1em;
+
 }
 /*contact form*/
 
-footer,header {
-    background-color: var(--mainColor);
+.testimonial-card {
+
+    display: grid;
+    grid-template-rows: 210px 1fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.testimonial-card img {
+    object-fit: fill;
+    width: 75%;
+    height: 100%;
+    border-radius: 10px;
+    
+}
+
+/* ------------------------------------------- */
+.recognized-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 5px;
+
+}
+
+.recognized-card {
+
+    display: grid;
+    grid-template-rows: 200px;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.recognized-card img {
+    object-fit: cover;
+    width: 75%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+footer,
+header {
+    background-color: #329966;
 }
 
 img {
