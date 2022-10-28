@@ -11,12 +11,12 @@
 <body>
     <header>
         <nav class="header">
-        <div class="logo"><a href="home.html">Logo</a></div>
+        <div class="logo"><a href="home.html"><h1 id="logo">SUDI FARM LTD</h1></a></div>
         <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle">
         <ul class="menu">
             <li><a href="home.html" target="_self"><span class="link">Home</span></a></li>
-            <li><a href="contact_us.html" target="_self"><span class="link">Contact</span></a></li>
+            <li><a href="contact_us.html" target="_self" class="current"><span class="link">Contact</span></a></li>
             <li><a href="about_us.html" target="_self"><span class="link">About</span></a></li>
             <li><a href="services.html" target="_self"><span class="link">Services</span></a></li>
         </ul>
@@ -26,14 +26,26 @@
         <div class="main-container">
             <form class="contact-container">
                 <h3>Contact us</h3>
+                <p>Reach out to us by filling the following form. <br>
+                We will reply to you as soon as we can <br>
+                Sudi Farm Limited.
+            </p>
                 <input type="text" id="name" placeholder="Your name" required>
                 <input type="email" id="email" placeholder="Email id" required>
                 <input type="text" id="phone" placeholder="Phone number" required>
                 <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
                 <button type="submit">Contact us</button>
             </form>
-            <div class="image-container">
-                <img src="images/animals.jpg" alt="logo" id="contact-logo">
+            <div class="icons-container">
+                <div class="call"><img src="images/phone.png" alt="phone image">
+                <span>Phone: +25475932953</span>
+                </div>
+                <div class="email"><img src="images/email.png" alt="email">
+                <span>sudifarm@gmail.com</span>
+                </div>
+                <div class="address"><img src="images/address.png" alt="address">
+                <span>Roysambu</span>
+                </div>
             </div>
         </div>
     </main>

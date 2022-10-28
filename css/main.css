@@ -25,14 +25,12 @@ body{
     height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(0, 100, 0, 0.1);
+    /* text-align: center; */
     /* background-size: 100% 100%;
     background-position: 0px 0px;
     background-image: linear-gradient(177deg, #50bb85 52%, #71C4FFFF 100%); */
 }
 
-#logo{
-    height: 100px;
-}
 
 img,
 div,
@@ -77,15 +75,25 @@ li a{
     height: 2em;
     padding: 0 1rem;
     margin-top: 1rem;
+    color: white;
 }
 
 .link:hover{
+    /* border: 1px solid var(--mainColor);
+    border-radius: 20px;
+    background-color: var(--mainColor); */
     color: aqua;
     transition: 0.4s;
 }
-a:active, :focus {
-    outline: 2px solid var(--lighter);
-    background: var(--royal);
+#logo{
+    font-size: 1em;
+    color: goldenrod;
+}
+li .current{
+    outline: 2px solid var(--mainColor);
+    background-color: var(--royal);
+    /* padding: 1rem; */
+    border-radius: 20px;
 }
 label{
     position: absolute;
@@ -106,16 +114,18 @@ label{
 }
 #hero{
     display: grid;
-    /* background-image: url("../images/tractor-cover.png"); */
+    background-image: url("../images/tractor-cover.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     height: 100vh;
+    width: 100vw;
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
+    margin: 0;
 }
 #hero-content{
     color: white;
@@ -153,22 +163,19 @@ a:hover {}
 
 
 .centered {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 .logo{
     /* display: none; */
     /* background-color: aqua; */
     /* margin-top: 1rem; */
+    /* border: 2px solid aqua; */
     align-content: center;
     justify-content: center;
     text-decoration: none;
     font-size: 1em;
     color: var(--royal);
-}
-.logo img{
-    height: 100%;
-    width: 50%;
 }
 
 body {
@@ -177,7 +184,99 @@ body {
     grid-template-rows: min-content 1fr min-content;
     /* gap: 10px; */
 }
-
+#header-el{
+    color: hsla(0, 0, 0, 0);
+    text-align: center;
+}
+.hero{
+    margin-top: 10px;
+    background-color: var(--bright);
+    overflow: hidden;
+    height: 60vh;
+    background-repeat: no-repeat;
+}
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.home-col {
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 1s;
+    background-color: var(--bright);
+}
+.home-col:hover{
+    background-color: var(--dark);
+}
+.motto{
+    font-size: 30px;
+}
+.footer{
+    display: flex;
+    background-color: aquamarine;
+    flex-direction: column;
+}
+.footer-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--bright);
+    width:100%;
+    text-align:center;
+    padding: 3em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: 600;
+}
+.copyrights{
+    text-align: center;
+    font-size: 1.25em;
+    background-color: var(--bright);
+}
+.taekwondo{
+    background-color: var(--bright);
+    display: flex;
+    justify-content: space-between;
+}
+.taek2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+#taek1 img{
+    height: 50vh;
+    width: 40vw;
+}
+.arts{
+    background-color: var(--brighter);
+    display: flex;
+    justify-content: space-between;
+}
+.arts1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+.arts2 img{
+    height: 50vh;
+    width: 40vw;
+}
+p{
+    font-size: 1.5rem;
+}
+img{
+    height: 50%;
+    width: 50%;
+}
 header,
 footer {
     grid-column-start: 1;
@@ -387,7 +486,7 @@ footer{
     /* position: absolute; */
     /* bottom: 0; */
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 2em;
     /* z-index: -1; */
 }
 .footer-div{
@@ -402,6 +501,7 @@ footer{
     font-weight: 600;
 }
 .copyrights{
+    align-items: center;
     text-align: center;
     font-size: 1.25em;
     background-color: #329966;
@@ -413,7 +513,7 @@ footer{
         left: 0;
         right: 0;
         margin-bottom: 5px;
-        height: 10vh;
+        height: 15vh;
         z-index: 1;
     }
     label{
@@ -474,42 +574,11 @@ footer{
     }
 }
 @media screen and (max-width: 400px) {
-    ul{
+    .footer-content{
         display: flex;
-        /* flex-direction: row; row is the default so no need to specify */
-        flex-direction: column;
-    }
-    .toggle-button{
-        display: flex;
-    }
-    li{
-        /* display: none; */
-        z-index: -1;
-    }
-    li a{
-        padding: 0.5rem, 0em;
-        margin: 0;
-        /* color: yellow; */
-    }
-    .footer-div{
         flex-direction: column;
         margin-bottom: 2px;
-        display: none;
+        /* display: none; */
         /*do i remove this?*/
-    }
-    .toggle-button{
-        position: absolute;
-        top: 1rem;
-        right: 0.0001rem;
-    }
-    li a{
-        padding: 0;
-        margin: 0;
-    }
-    .toggle-button .bar{
-        height: 5px;
-        width: 10%;
-        background-color: var(--lighter);
-        border-radius: 0.5em;
     }
 }
