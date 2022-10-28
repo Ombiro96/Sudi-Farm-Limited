@@ -29,8 +29,11 @@ body{
     background-position: 0px 0px;
     background-image: linear-gradient(177deg, #50bb85 52%, #71C4FFFF 100%); */
 }
-ul, 
-li,
+
+#logo{
+    height: 100px;
+}
+
 img,
 div,
 header,
@@ -119,10 +122,11 @@ label{
     font-weight: 600;
     font-size: 1.3em;
     padding: 1em 1em;
-    width: 320px;
+    width: 35%;
+    background: rgb(0,0,0,0.2)
 }
 
-
+/* --------------------------------------------------------------- */
 
 /* footer content */
 .footer-content {
@@ -135,6 +139,8 @@ label{
     justify-items: center;
     align-items: center;
 }
+/* --------------------------------------------------------------- */
+
 /* link styles */
 /* #45d451 */
 
@@ -202,6 +208,33 @@ main {
 }
 
 
+.intro-images {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+
+}
+
+/* intro content */
+#intro img {
+    object-fit: cover;
+    height:300px;
+    border-radius: 5%;
+    max-width: 80%;
+}
+
+
+#content-section img {
+    object-fit: cover;
+    height:300px;
+    border-radius: 5%;
+    max-width: 80%;
+    
+    
+}
+/* --------------------------------------------------------------- */
+/* card styles */
+
 .product-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -253,7 +286,7 @@ main {
 /* ------------------------------------------- */
 .recognized-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 5px;
 
 }
@@ -268,12 +301,49 @@ main {
 }
 
 .recognized-card img {
-    object-fit: cover;
-    width: 75%;
+    object-fit: fill;
+    width: 70%;
+    height: 80%;
+    border-radius: 50%;
+    
+}
+
+/* ------------------------------- */
+
+#services-content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+}
+#services-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.5em;
+    /* grid-template-columns: 200px; */
+
+}
+
+.service-card {
+
+    display: grid;
+    grid-template-rows: max-content 210px 1fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.service-card img {
+    object-fit: fill;
+    width: 200px;
     height: 100%;
     border-radius: 50%;
     
 }
+
+
+
+
 footer,
 header {
     background-color: #329966;
