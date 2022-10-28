@@ -6,27 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <title>🌽🍖 Sudi Farm</title>
 </head>
 
 <body>
-    <header id="main-nav">
-        <nav class="nav">
-            <ul>
-                <li><img id="logo" src="images/logo2.png" alt=""></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="services.html">Our Services</a></li>
-                <li><a href="about-us.html">Who we are</a></li>
-                <li><a href="contact-us.html">Get in Touch</a></li>
-            </ul>
-        </nav>
+    <header>
+        <nav class="header">
+        <div class="logo"><a href="home.html"><img id="logo" src="images/logo2.png" alt="logo"></a></div>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <ul class="menu">
+            <li><a href="home.html" target="_self"><span class="link">Home</span></a></li>
+            <li><a href="contact_us.html" target="_self"><span class="link">Contact</span></a></li>
+            <li><a href="about_us.html" target="_self"><span class="link">About</span></a></li>
+            <li><a href="services.html" target="_self"><span class="link">Services</span></a></li>
+        </ul>
+    </nav>
     </header>
-
     <main>
-        <div id="hero">
+        <!-- <div id="hero">
             <div id="hero-content">
-                <h1 id="hero-title">Sudi Farm</h1>
-                <p id="hero-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate?
+                <div>
+                    <h1>Sudi Farm</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate?
                     Nemo,
                     consequatur </p>
             </div>
@@ -221,7 +224,7 @@
                 <p>Monday through Sunday</p>
             </address>
         </div>
-        <p class="copyright">copyright: @Sudi Farm Limited</p>
+        <p class="copyrights">copyright: @Sudi Farm Limited</p>
 
     </footer>
 </body>
