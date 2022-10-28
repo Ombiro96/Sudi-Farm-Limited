@@ -17,6 +17,9 @@ body {
     background-image: linear-gradient(177deg, #50bb85 52%, #71C4FFFF 100%); */
 }
 
+#logo{
+    height: 100px;
+}
 
 img,
 div,
@@ -244,6 +247,43 @@ main {
     border-radius: 50%;
     
 }
+
+/* ------------------------------- */
+
+#services-content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+}
+#services-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.5em;
+    /* grid-template-columns: 200px; */
+
+}
+
+.service-card {
+
+    display: grid;
+    grid-template-rows: max-content 210px 1fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.service-card img {
+    object-fit: fill;
+    width: 200px;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+
+
+
+
 footer,
 header {
     background-color: #329966;
