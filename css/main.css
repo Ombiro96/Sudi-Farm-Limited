@@ -145,7 +145,8 @@ main {
 
 #main-content article {
     display: grid;
-    padding: 1em;
+    padding: 2.5em;
+    /* margin:0.5em; */
 
 }
 
@@ -153,10 +154,17 @@ main {
 #intro {
 
     grid-template-columns: 1fr 1fr;
-
+    
     /* grid-column-start: 1; */
 }
 
+.colored-row1{
+    background-color: hsl(151, 93%, 36%, 0.75);
+}
+
+.colored-row2{
+    background-color: rgb(153, 109, 253, 0.7);
+}
 .intro-images {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -165,6 +173,10 @@ main {
 }
 
 /* intro content */
+
+#intro-content{
+    
+}
 #intro img {
     object-fit: cover;
     height:300px;
@@ -186,9 +198,13 @@ main {
 
 .product-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 1em;
+    
 
+}
+.product-card h3{
+    color:#ffffff;
 }
 
 .product-card {
@@ -197,9 +213,10 @@ main {
     grid-template-rows: max-content 230px 1fr;
     justify-items: center;
     align-items: center;
-    
+    text-align: center;
 
 }
+
 .product-card img {
     object-fit: cover;
     width: 100%;
@@ -210,7 +227,7 @@ main {
 .testimonial-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1em;
+    gap: 0.4em;
 
 }
 
@@ -220,6 +237,7 @@ main {
     grid-template-rows: 210px 1fr;
     justify-items: center;
     align-items: center;
+    text-align: center;
     
 }
 
@@ -289,9 +307,6 @@ main {
     
 }
 
-
-
-
 footer,
 header {
     background-color: #329966;
@@ -303,10 +318,10 @@ img {
 }
 
 
-#contact-us a {
-    background-color: #662D9F;
+/* #contact-us a {
+    background-color: #377EFF;
     color: white;
-}
+} */
 
 h2 {
     color: #662D9F;
@@ -318,13 +333,12 @@ h1 {
     font-size: 2.5rem;
 }
 
-#contact-us h2 {
-    color: #377EFF;
+article p {
+    padding: 1em;
 }
-
 .btn {
     color: white;
-    background-color: #377EFF;
+    background-color: #662D9F;
     padding: 0.7em 1.5em;
     text-decoration: none;
     margin: 10px;
@@ -335,13 +349,14 @@ h1 {
 }
 
 
+
 /* responsive mobile design */
 @media screen and (max-width: 768px) {
 
     #content-section,
-    #intro {
+    #intro, #intro-images {
 
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
 
         /* grid-column-start: 1; */
     }
