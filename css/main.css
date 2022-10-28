@@ -83,7 +83,7 @@ nav ul a {
     background: rgb(0,0,0,0.2)
 }
 
-
+/* --------------------------------------------------------------- */
 
 /* footer content */
 
@@ -104,6 +104,8 @@ nav ul a {
     color: white;
 
 }
+
+/* --------------------------------------------------------------- */
 
 /* link styles */
 /* #45d451 */
@@ -226,7 +228,7 @@ main {
 /* ------------------------------------------- */
 .recognized-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 5px;
 
 }
@@ -241,9 +243,9 @@ main {
 }
 
 .recognized-card img {
-    object-fit: cover;
-    width: 75%;
-    height: 100%;
+    object-fit: fill;
+    width: 70%;
+    height: 80%;
     border-radius: 50%;
     
 }
