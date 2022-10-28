@@ -6,87 +6,221 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Sudi Farm 🌽🍖</title>
+    <title>🌽🍖 Sudi Farm</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo"><a href="home.html">Logo</a></div>
-        <ul>
-            <li><a href="home.html" target="_self">Home</a></li>
-            <li><a href="contact_us.html" target="_self">Contact us</a></li>
-            <li><a href="about_us.html" target="_self">About us</a></li>
-            <li><a href="services.html" target="_self">Services</a></li>
-        </ul>
+    <header id="main-nav">
+        <nav class="nav">
+            <ul>
+                <li><img id="logo" src="" alt=""></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="about-us.html">Who we are</a></li>
+                <li><a href="contact-us.html">Get in Touch</a></li>
+            </ul>
+        </nav>
     </header>
-    <main class="centered">
-        <article id="hero">
-            <h1>Sudi Farm</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate? Nemo,
-                consequatur ullam libero tempore beatae velit, tenetur mollitia architecto repellendus, laboriosam
-                earum? Ea, praesentium rem!</p>
-        </article>
-        <article id="intro">
-            <div>
-                <h2>what we do ...</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate? Nemo,
-                consequatur ullam libero tempore beatae velit, tenetur mollitia architecto repellendus, laboriosam
-                earum? Ea, praesentium rem!</p>
-            </div>
-                <img src="" alt="intro-image">
-        </article>
-        <article id="products">
-            <h2>Our products</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate? Nemo,
-                consequatur ullam libero tempore beatae velit, tenetur mollitia architecto repellendus, laboriosam
-                earum? Ea, praesentium rem!</p>
-        </article>
-        <article id="content-section">
-            <div>
-                <h2>How it works</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate? Nemo,
+
+    <main>
+        <div id="hero">
+            <div id="hero-content">
+                <h1 id="hero-title">Sudi Farm</h1>
+                <p id="hero-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate?
+                    Nemo,
                     consequatur ullam libero tempore beatae velit, tenetur mollitia architecto repellendus, laboriosam
                     earum? Ea, praesentium rem!</p>
             </div>
-            <img src="" alt="content-image">
-        <!-- <div></div> -->
-        </article>
-        <article id="testimonials">
-            <h2>Trusted by ...</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate? Nemo,
-                consequatur ullam libero tempore beatae velit, tenetur mollitia architecto repellendus, laboriosam
-                earum? Ea, praesentium rem!</p>
-        </article>
-        <article id="about-us">
-            <h2>Our story</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate? Nemo,
-                consequatur ullam libero tempore beatae velit, tenetur mollitia architecto repellendus, laboriosam
-                earum? Ea, praesentium rem!</p>
-        </article>
-        <article id="contact-us">
-            <h2>Contact us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate? Nemo,
-                consequatur ullam libero tempore beatae velit, tenetur mollitia architecto repellendus, laboriosam
-                earum? Ea, praesentium rem!</p>
-        </article>
+        </div>
+        <div id="main-content" class="centered">
+            <article id="intro">
+                <div>
+                    <h2>what we do ...</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate?
+                        Nemo,
+                        consequatur ullam libero tempore beatae velit, tenetur mollitia architecto repellendus,
+                        laboriosam
+                        earum? Ea, praesentium rem!</p>
+                </div>
+                <img class="intro-image" src="images/eryngium_smiling_man.jpg" alt="">
+            </article>
+            <article id="products">
+                <h2>Our products</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate?
+                    Nemo,
+                    consequatur ullam libero tempore beatae velit, tenetur mollitia architecto repellendus, laboriosam
+                    earum? Ea, praesentium rem!</p>
+
+                <div class="product-cards centered">
+                    <article class="product-card">
+                        
+                        <h3>Poultry</h3>
+                        
+                        <img src="images/chicken_tray.jpg" alt="chicken cuts on a wooden board">
+                        <div class="product-card-content">
+                            <p> The idea of reaching the North Pole by means of balloons appears to have been entertained many
+                                years ago. </p>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        
+                        <h3>Eggs</h3>
+                        
+                        <img src="images/egg_basket.png" alt="eggs in a basket">
+                        <div class="product-card-content">
+                            <p> The idea of reaching the North Pole by means of balloons appears to have been entertained many
+                                years ago. </p>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        
+                        <h3>Fresh cuts</h3>
+                        
+                        <img src="images/meat_locker.jpg" alt="meat hung in a cold room">
+                        <div class="product-card-content">
+                            <p> The idea of reaching the North Pole by means of balloons appears to have been entertained many
+                                years ago. </p>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        
+                        <h3>Vegetables</h3>
+                        
+                        <img src="images/vegez_crate.jpg" alt="crates of an assortment of vegetables">
+                        <div class="product-card-content">
+                            <p> The idea of reaching the North Pole by means of balloons appears to have been entertained many
+                                years ago. </p>
+                        </div>
+                    </article>
+
+                </div>
+            </article>
+            <article id="content-section">
+                <div>
+                    <h2>How it works</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate?
+                        Nemo,
+                        consequatur ullam libero tempore beatae velit, tenetur mollitia architecto repellendus,
+                        laboriosam
+                        earum? Ea, praesentium rem!</p>
+                </div>
+                <img class= "content-image" src="images/warehouse_delivery.jpg" alt="">
+                <!-- <div></div> -->
+            </article>
+            <article id="testimonials">
+                <h2>Trusted by ...</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate?
+                    Nemo,
+                    consequatur ullam libero tempore beatae velit, tenetur mollitia architecto repellendus, laboriosam
+                    earum? Ea, praesentium rem!</p>
+                    <div class="testimonial-cards centered">
+                        <article class="testimonial-card">
+                            
+                            <img src="images/Carrefour.png" alt="Carrefour logo">
+                            <div class="tesimonial-card-content">
+                                <p> The idea of reaching the North Pole by means of balloons appears to have been entertained many
+                                    years ago. </p>
+                            </div>
+                        </article>
+                        <article class="testimonial-card">
+                            
+                            <img src="images/hotel waterbuck.png" alt="">
+                            <div class="tesimonial-card-content">
+                                <p> The idea of reaching the North Pole by means of balloons appears to have been entertained many
+                                    years ago. </p>
+                            </div>
+                        </article>
+                        <article class="testimonial-card">
+                            
+                            <img src="images/butchery.png" alt="">
+                            <div class="tesimonial-card-content">
+                                <p> The idea of reaching the North Pole by means of balloons appears to have been entertained many
+                                    years ago. </p>
+                            </div>
+                        </article>
+                        <article class="testimonial-card">
+                            
+                            <img src="images/daystar.png" alt="">
+                            <div class="tesimonial-card-content">
+                                <p> The idea of reaching the North Pole by means of balloons appears to have been entertained many
+                                    years ago. </p>
+                            </div>
+                        </article>
+                    </div>
+                    
+            </article>
+            <article id="about-us">
+                <h2>Our story</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate?
+                    Nemo,
+                    consequatur ullam libero tempore beatae velit, tenetur mollitia architecto repellendus, laboriosam
+                    earum? Ea, praesentium rem!</p>
+                <a class="btn" href="#">Learn More</a>
+            </article>
+            <article id="contact-us">
+                <h2>Contact us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate?
+                    Nemo,
+                    consequatur ullam libero tempore beatae velit, tenetur mollitia architecto repellendus, laboriosam
+                    earum? Ea, praesentium rem!</p>
+                <a class="btn" href="#">Learn More</a>
+            </article>
+
+            <article id="about-us">
+                <h2>Recognized by</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum sunt quia illo cupiditate?
+                    Nemo,
+                    consequatur ullam libero tempore beatae velit, tenetur mollitia architecto repellendus, laboriosam
+                    earum? Ea, praesentium rem!</p>
+                    <div class="recognized-cards centered">
+                        <article class="recognized-card">
+                            
+                            <img src="images/chicken_tray.jpg" alt="">
+                            
+                            
+                        </article>
+                        <article class="recognized-card">
+                            
+                            <img src="images/chicken_tray.jpg" alt="">
+                            
+                        </article>
+                        <article class="recognized-card">
+                            
+                            <img src="images/chicken_tray.jpg" alt="">
+                            
+                        </article>
+                        <article class="recognized-card">
+                            
+                            <img src="images/chicken_tray.jpg" alt="">
+                            
+                        </article>
+                    </div>
+                
+                
+               
+            </article>
+        </div>
     </main>
     <footer>
-        <div class="footer-div">
-            <div>Address
-                <p>Roysambu</p>
-            <p>Thome</p>
-            <p>Adress: 2846</p>
-        </div>
-            <div>Contact us
-                <p>Phone no: +254713592852</p>
-                <p>Email: sudifarm@gmail.com</p>
-            </div>
-            <div>Office hours
+        <div class="footer-content">
+            <address>
+                <h3>Address</h3>
+                <p>Location: Roysambu, Thome</p>
+                <p>P.O BOX 2846</p>
+            </address>
+            <address>
+                <p>Contact us</p>
+                <p>Phone no: +25470424242</p>
+                <p>Email: contact@sudifarm.com</p>
+            </address>
+            <address>
+                <p>Office hours</p>
                 <p>7.00am-5.00pm</p>
                 <p>Monday through Sunday</p>
-            </div>
-            </div>
-            <div class="copyrights">copyrights: @Sudi Farm Limited</div>
+            </address>
+        </div>
+        <p class="copyright">copyright: @Sudi Farm Limited</p>
+
     </footer>
 </body>
 
