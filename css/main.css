@@ -327,9 +327,7 @@ h1 {
     text-align: center;
 
 }
-main p{
-    margin-top: 70px;
-}
+
 
 /* responsive mobile design */
 @media screen and (max-width: 768px) {
