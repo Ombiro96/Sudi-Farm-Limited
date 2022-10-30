@@ -16,6 +16,7 @@
 }
 body {
     /* background-color: hsla(151, 93%, 36%, 0.1); */
+    text-align: center;
 }
 
 html,
@@ -132,7 +133,7 @@ label{
     font-weight: 600;
     font-size: 1.3em;
     padding: 1em 1em;
-    width: 35%;
+    width: 40%;
     background: rgb(0,0,0,0.2)
 }
 
@@ -163,7 +164,7 @@ a:hover {}
 
 
 .centered {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
 }
 .logo{
@@ -305,11 +306,17 @@ main {
 
     /* grid-column-start: 1; */
 }
+.colored-row1{
+    background-color: hsl(151, 93%, 36%, 0.75);
+}
 
+.colored-row2{
+    background-color: rgb(153, 109, 253, 0.7);
+}
 
 .intro-images {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 10px;
 
 }
@@ -339,6 +346,9 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 1em;
 
+}
+.product-card h3{
+    color:#ffffff;
 }
 
 .product-card {
@@ -451,13 +461,14 @@ header {
 img {
     background-color: var(--royal);
 }
-#contact-us a {
+/* #contact-us a {
     background-color: #662D9F;
     color: white;
-}
+} */
 h2 {
     color: #662D9F;
     text-align: center;
+    font-size: 2em;
 }
 
 h1 {
@@ -465,13 +476,13 @@ h1 {
     font-size: 2.5rem;
 }
 
-#contact-us h2 {
+/* #contact-us h2 {
     color: #377EFF;
-}
+} */
 
 .btn {
     color: white;
-    background-color: #377EFF;
+    background-color: #662D9F;
     padding: 0.7em 1.5em;
     text-decoration: none;
     margin: 10px;
@@ -573,12 +584,15 @@ footer{
         top: 10vh;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .footer-content{
         display: flex;
         flex-direction: column;
         margin-bottom: 2px;
         /* display: none; */
         /*do i remove this?*/
+    }
+    #hero-text{
+        display: none;
     }
 }
